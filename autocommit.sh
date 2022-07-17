@@ -14,11 +14,6 @@ while true; do
 	git add .
         git commit -m "Free commits"
         git push --force >> /dev/null
-
-	if [ $counter == "333" ]; then 
-		exit
-	elif [ $counter != "333" ]; then
-		echo "$counter"
-	fi
+	echo "$counter"
 done
 
